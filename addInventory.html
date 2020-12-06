@@ -29,8 +29,8 @@
                 <div class="col-12">
                     <!-- Inward Entry Header -->
                     <div class="form-group row">
-                        <label for="invoice" class="col-1">Invoice</label>
                         <div class="col-4">
+                            <label for="invoice">Invoice Number</label>
                             <input
                                 type="text"
                                 class="form-control"
@@ -42,10 +42,10 @@
                                 >Invoice Number for the Inward Entry</small
                             >
                         </div>
-                        <label for="date" class="col-1">Date</label>
                         <div class="col-4">
+                            <label for="date">Invoice Date</label>
                             <input
-                                type="text"
+                                type="date"
                                 class="form-control"
                                 id="date"
                                 aria-describedby="dateHelp"
@@ -60,131 +60,128 @@
                 <div class="container-fluid">
                     <!-- Inward Entry Form Container -->
                     <div class="col-12 mx-auto border p-3">
-                        <div class="form-group row">
-                            <!-- Grade Input -->
-                            <div class="col">
-                                <label for="grade">Grade</label>
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="grade"
-                                    placeholder="Grade"
-                                />
-                            </div>
-                            <!-- Size Input -->
-                            <div class="col">
-                                <label for="Size">Size</label>
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="size"
-                                    placeholder="Size"
-                                />
-                            </div>
-                            <!-- Serial Number Input -->
-                            <div class="col">
-                                <label for="SerialNo">Serial No</label>
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="serial-no"
-                                    placeholder="Serial No"
-                                />
-                            </div>
-                            <!-- Length Input -->
-                            <div class="col">
-                                <label for="Length">Length</label>
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="length"
-                                    placeholder="Length"
-                                />
-                            </div>
-                            <!-- Weight Input -->
-                            <div class="col">
-                                <label for="Weight">Weight</label>
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="weight"
-                                    placeholder="Weight"
-                                />
-                            </div>
-                            <!-- Date Input -->
-                            <div class="col">
-                                <label for="Date">Date</label>
-                                <input
-                                    type="date"
-                                    class="form-control"
-                                    id="date"
-                                    placeholder="Date"
-                                />
-                            </div>
-                            <!-- HSN Code Input -->
-                            <div class="col">
-                                <label for="HSNCode">HSN Code</label>
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="hsnCode"
-                                    placeholder="HSN Code"
-                                />
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <!-- Heat No Input -->
-                            <div class="col">
-                                <label for="HeatNo">Heat No</label>
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="heatNo"
-                                    placeholder="Heat No"
-                                />
-                            </div>
-                            <!-- WareHouse Number Input -->
-                            <div class="col">
-                                <label for="WarehouseNumber"
-                                    >Warehouse Number</label
-                                >
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="warehouseNumber"
-                                    placeholder="Warehouse Number"
-                                />
-                            </div>
-                            <!-- Manufacturer Name Input -->
-                            <div class="col">
-                                <label for="ManufacturerName"
-                                    >Manufacturer Name</label
-                                >
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="manufacturerName"
-                                    placeholder="Manufacturer Name"
-                                />
-                            </div>
-                            <!-- Comments Input -->
-                            <div class="col">
-                                <label for="Comments">Comments</label>
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="comments"
-                                    placeholder="Comments"
-                                />
-                            </div>
-                            <!-- Remove Item Button -->
-                            <div class="col d-flex justify-content-center">
-                                <button
-                                    type="button"
-                                    class="btn btn-danger align-middle"
-                                >
-                                    Remove Row
-                                </button>
+                        <div class="inventory-row border-bottom row">
+                            <div class="col-1">1</div>
+                            <div class="col-11">
+                                <div class="form-group row">
+                                    <!-- Grade Input -->
+                                    <div class="col-2">
+                                        <label for="grade">Grade</label>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="grade"
+                                            placeholder="Grade"
+                                        />
+                                    </div>
+                                    <!-- Size Input -->
+                                    <div class="col-2">
+                                        <label for="Size">Size</label>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="size"
+                                            placeholder="Size"
+                                        />
+                                    </div>
+                                    <!-- Serial Number Input -->
+                                    <div class="col-2">
+                                        <label for="SerialNo">Serial No</label>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="serial-no"
+                                            placeholder="Serial No"
+                                        />
+                                    </div>
+                                    <!-- Length Input -->
+                                    <div class="col-2">
+                                        <label for="Length">Length</label>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="length"
+                                            placeholder="Length"
+                                        />
+                                    </div>
+                                    <!-- Weight Input -->
+                                    <div class="col-2">
+                                        <label for="Weight">Weight</label>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="weight"
+                                            placeholder="Weight"
+                                        />
+                                    </div>
+                                    <!-- HSN Code Input -->
+                                    <div class="col-2">
+                                        <label for="HSNCode">HSN Code</label>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="hsnCode"
+                                            placeholder="HSN Code"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <!-- Heat No Input -->
+                                    <div class="col-2">
+                                        <label for="HeatNo">Heat No</label>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="heatNo"
+                                            placeholder="Heat No"
+                                        />
+                                    </div>
+                                    <!-- WareHouse Number Input -->
+                                    <div class="col-2">
+                                        <label for="WarehouseNumber"
+                                            >Warehouse Number</label
+                                        >
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="warehouseNumber"
+                                            placeholder="Warehouse Number"
+                                        />
+                                    </div>
+                                    <!-- Manufacturer Name Input -->
+                                    <div class="col-2">
+                                        <label for="ManufacturerName"
+                                            >Manufacturer Name</label
+                                        >
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="manufacturerName"
+                                            placeholder="Manufacturer Name"
+                                        />
+                                    </div>
+                                    <!-- Comments Input -->
+                                    <div class="col-2">
+                                        <label for="Comments">Comments</label>
+                                        <textarea
+                                            name="comments"
+                                            id="comments"
+                                            cols="30"
+                                            rows="2"
+                                        ></textarea>
+                                    </div>
+                                    <!-- Remove Item Button -->
+                                    <div
+                                        class="col d-flex justify-content-center align-items-center"
+                                    >
+                                        <button
+                                            type="button"
+                                            class="btn btn-danger remove-row"
+                                        >
+                                            Remove Row
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -193,10 +190,14 @@
                     <div class="row">
                         <div class="col">
                             <button
+                                id="add-row"
                                 type="button"
-                                class="btn btn-primary align-middle"
+                                class="btn btn-primary"
                             >
                                 Add Row
+                            </button>
+                            <button type="button" class="btn btn-success ml-2">
+                                Submit
                             </button>
                         </div>
                     </div>
@@ -220,5 +221,6 @@
             integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
             crossorigin="anonymous"
         ></script>
+        <script src="./js/addInventory.js" defer></script>
     </body>
 </html>
