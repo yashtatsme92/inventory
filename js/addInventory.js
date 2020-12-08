@@ -12,6 +12,7 @@ jQuery(function () {
      */
 
     $("#add-row").on("click", () => {
+        let inventoryRow = $(".inventory-row");
         inventoryRow.last().after(inventoryRowCopy);
     });
 
