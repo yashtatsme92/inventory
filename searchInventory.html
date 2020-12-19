@@ -49,20 +49,6 @@
                             <a class="nav-link" href="#">Search Inventory</a>
                         </li>
                     </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input
-                            class="form-control mr-sm-2"
-                            type="search"
-                            placeholder="Search"
-                            aria-label="Search"
-                        />
-                        <button
-                            class="btn btn-outline-success my-2 my-sm-0"
-                            type="submit"
-                        >
-                            Search
-                        </button>
-                    </form>
                 </div>
             </nav>
         </header>
@@ -77,126 +63,191 @@
                 </ol>
             </nav>
         </section>
-        <div class="container-fluid">
-            <!-- Search Inventory Container -->
-            <section>
-                <div class="row m-auto">
-                    <div class="col"></div>
-                    <div class="col-4">
-                        <input
-                            class="form-control mr-sm-2"
-                            type="search"
-                            placeholder="Search"
-                            aria-label="Search"
-                        />
-                    </div>
-                    <div class="col-2">
-                        <button
-                            class="btn btn-outline-success my-2 my-sm-0"
-                            type="submit"
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- SIDEBAR -->
+
+                    <div class="col-2 border-right">
+                        <div
+                            class="nav flex-column nav-pills"
+                            id="v-pills-tab"
+                            role="tablist"
+                            aria-orientation="vertical"
                         >
-                            Search
-                        </button>
+                            <a
+                                class="nav-link active"
+                                id="v-pills-home-tab"
+                                data-toggle="pill"
+                                href="#v-pills-home"
+                                role="tab"
+                                aria-controls="v-pills-home"
+                                aria-selected="true"
+                                >Home</a
+                            >
+                            <a
+                                class="nav-link"
+                                id="v-pills-settings-tab"
+                                data-toggle="pill"
+                                href="#v-pills-settings"
+                                role="tab"
+                                aria-controls="v-pills-settings"
+                                aria-selected="false"
+                                >Search</a
+                            >
+                            <a
+                                class="nav-link"
+                                id="v-pills-profile-tab"
+                                data-toggle="pill"
+                                href="#v-pills-profile"
+                                role="tab"
+                                aria-controls="v-pills-profile"
+                                aria-selected="false"
+                                >Inward Inventory</a
+                            >
+                            <a
+                                class="nav-link"
+                                id="v-pills-messages-tab"
+                                data-toggle="pill"
+                                href="#v-pills-messages"
+                                role="tab"
+                                aria-controls="v-pills-messages"
+                                aria-selected="false"
+                                >Outward Inventory</a
+                            >
+                        </div>
                     </div>
-                    <div class="col"></div>
-                </div>
-            </section>
-            <section class="section mt-5">
-                <div class="alert alert-danger" role="alert">
-                    No Records Found
-                </div>
-            </section>
-            <section class="section mt-5">
-                <div class="container-fluid">
-                    <div class="row">
-                        <h3>Results</h3>
-                    </div>
-                    <div class="row">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Grade</th>
-                                    <th scope="col">Size</th>
-                                    <th scope="col">Serial No</th>
-                                    <th scope="col">Length</th>
-                                    <th scope="col">Product Type</th>
-                                    <th scope="col">Weight</th>
-                                    <th scope="col">HSN Code</th>
-                                    <th scope="col">Heat No</th>
-                                    <th scope="col">Warehouse Number</th>
-                                    <th scope="col">Manufacturer Name</th>
-                                    <th scope="col">Comments</th>
-                                    <th scope="col">Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td
-                                        class="col d-flex justify-content-center align-items-center"
+                    <div class="col-10">
+                        <!-- Search Inventory Container -->
+                        <section>
+                            <div class="row m-auto">
+                                <div class="col"></div>
+                                <div class="col-2">
+                                    <label for="searchGrade">Grade</label>
+
+                                    <input
+                                        class="form-control mr-sm-2"
+                                        type="searchGrade"
+                                        id="searchGrade"
+                                        placeholder="Grade"
+                                        aria-label="searchGrade"
+                                    />
+                                </div>
+                                <div class="col-2">
+                                    <label for="searchSize">Size</label>
+
+                                    <input
+                                        class="form-control mr-sm-2"
+                                        id="searchSize"
+                                        type="searchSize"
+                                        placeholder="Size"
+                                        aria-label="searchSize"
+                                    />
+                                </div>
+                                <div class="col-2 d-flex align-items-end">
+                                    <button
+                                        class="btn btn-outline-success my-2 my-sm-0"
+                                        type="submit"
+                                        onclick="verify()"
                                     >
-                                        <button
-                                            type="button"
-                                            class="btn btn-light"
-                                        >
-                                            Edit
-                                        </button>
-                                        <button
-                                            type="button"
-                                            class="btn btn-danger ml-3"
-                                        >
-                                            Send to Outward
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td
-                                        class="col d-flex justify-content-center align-items-center"
-                                    >
-                                        <button
-                                            type="button"
-                                            class="btn btn-light"
-                                        >
-                                            Edit
-                                        </button>
-                                        <button
-                                            type="button"
-                                            class="btn btn-danger ml-3"
-                                        >
-                                            Send to Outward
-                                        </button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                        Search
+                                    </button>
+                                </div>
+                                <div class="col"></div>
+                            </div>
+                        </section>
+                        <section class="section mt-5">
+                            <div class="alert alert-danger" role="alert">
+                                No Records Found
+                            </div>
+                        </section>
+                        <section class="section mt-5">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <h3>Results</h3>
+                                </div>
+                                <div class="row">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">
+                                                        No. of Pieces
+                                                    </th>
+                                                    <th scope="col">Length</th>
+                                                    <th scope="col">
+                                                        Product Type
+                                                    </th>
+                                                    <th scope="col">
+                                                        Manufacturer Name
+                                                    </th>
+                                                    <th scope="col">
+                                                        Comments
+                                                    </th>
+                                                    <th scope="col">Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>@mdo</td>
+                                                    <td>@mdo</td>
+                                                    <td>@mdo</td>
+                                                    <td>@mdo</td>
+                                                    <td>@mdo</td>
+
+                                                    <td
+                                                        class="col d-flex justify-content-center align-items-center"
+                                                    >
+                                                        <button
+                                                            type="button"
+                                                            class="btn btn-light"
+                                                        >
+                                                            Edit
+                                                        </button>
+                                                        <button
+                                                            type="button"
+                                                            class="btn btn-danger ml-3"
+                                                        >
+                                                            Send to Outward
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>@mdo</td>
+                                                    <td>@mdo</td>
+                                                    <td>@mdo</td>
+                                                    <td>@mdo</td>
+                                                    <td>@mdo</td>
+                                                    <td
+                                                        class="col d-flex justify-content-center align-items-center"
+                                                    >
+                                                        <button
+                                                            type="button"
+                                                            class="btn btn-light"
+                                                        >
+                                                            Edit
+                                                        </button>
+                                                        <button
+                                                            type="button"
+                                                            class="btn btn-danger ml-3"
+                                                        >
+                                                            Send to Outward
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script
@@ -214,6 +265,18 @@
             integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
             crossorigin="anonymous"
         ></script>
-        <script src="./js/addInventory.js" defer></script>
+        <script>
+            function verify() {
+                if (!$("#searchGrade").val().trim().length) {
+                    alert("Please enter the Grade");
+                    return;
+                }
+                if (!$("#searchSize").val().trim().length) {
+                    alert("Please enter the Size");
+                    return;
+                }
+                // AJAX Call HERE
+            }
+        </script>
     </body>
 </html>
