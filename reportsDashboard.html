@@ -30,12 +30,11 @@
                         cubic-bezier(0.155, 1.105, 0.295, 1.12),
                     0.3s box-shadow,
                     0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
-                cursor: pointer;
             }
 
-            .card:hover {
-                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12),
-                    0 4px 8px rgba(0, 0, 0, 0.06);
+            .card .btn:hover {
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12),
+                    0 1px 1px rgba(0, 0, 0, 0.06);
             }
         </style>
     </head>
@@ -150,11 +149,11 @@
                     </div>
                     <div class="col-10">
                         <!-- Reports Dashboard Header -->
-                        <section>
+                        <section class="m-3">
                             <h1>Reports Dashboard</h1>
                         </section>
                         <!-- Reports Dashboard Body -->
-                        <section class="section mt-5">
+                        <section class="section mt-4">
                             <div class="container-fluid">
                                 <div class="row mb-4">
                                     <div class="col-4">
@@ -168,7 +167,30 @@
                                                 >
                                                     A Typical Inward Report
                                                 </h6>
-                                                
+
+                                                <button
+                                                    href="#"
+                                                    class="btn btn-toolbar mt-3"
+                                                    data-toggle="modal"
+                                                    data-target="#inwardReport"
+                                                >
+                                                    Generate Report
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="card h-100">
+                                            <div class="card-body">
+                                                <h5 class="card-title">
+                                                    Outward Report
+                                                </h5>
+                                                <h6
+                                                    class="card-subtitle mb-2 text-muted"
+                                                >
+                                                    A Typical Outward Report
+                                                </h6>
+
                                                 <button
                                                     href="#"
                                                     class="btn btn-toolbar mt-3"
@@ -191,28 +213,7 @@
                                                 >
                                                     Card subtitle
                                                 </h6>
-                                               
-                                                <a href="#" class="card-link"
-                                                    >Card link</a
-                                                >
-                                                <a href="#" class="card-link"
-                                                    >Another link</a
-                                                >
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="card h-100">
-                                            <div class="card-body">
-                                                <h5 class="card-title">
-                                                    Card title
-                                                </h5>
-                                                <h6
-                                                    class="card-subtitle mb-2 text-muted"
-                                                >
-                                                    Card subtitle
-                                                </h6>
-                                               
+
                                                 <a href="#" class="card-link"
                                                     >Card link</a
                                                 >
