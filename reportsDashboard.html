@@ -32,7 +32,7 @@
                     0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
             }
 
-            .card .btn:hover {
+            .generate-report:hover {
                 box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12),
                     0 1px 1px rgba(0, 0, 0, 0.06);
             }
@@ -149,212 +149,468 @@
                     </div>
                     <div class="col-10">
                         <!-- Reports Dashboard Header -->
-                        <section class="m-3">
+                        <section>
                             <h1>Reports Dashboard</h1>
                         </section>
-                        <!-- Reports Dashboard Body -->
-                        <section class="section mt-4">
-                            <div class="container-fluid">
-                                <div class="row mb-4">
-                                    <div class="col-4">
-                                        <div class="card h-100">
-                                            <div class="card-body">
-                                                <h5 class="card-title">
-                                                    Inward Report
-                                                </h5>
-                                                <h6
-                                                    class="card-subtitle mb-2 text-muted"
-                                                >
-                                                    A Typical Inward Report
-                                                </h6>
-
-                                                <button
-                                                    href="#"
-                                                    class="btn btn-toolbar mt-3"
-                                                    data-toggle="modal"
-                                                    data-target="#inwardReport"
-                                                >
-                                                    Generate Report
-                                                </button>
-                                            </div>
-                                        </div>
+                        <section>
+                            <div class="accordion mt-5" id="reportsAccodion">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h5 class="mb-0">
+                                            <button
+                                                class="btn btn-link"
+                                                type="button"
+                                                data-toggle="collapse"
+                                                data-target="#collapseOne"
+                                                aria-expanded="true"
+                                                aria-controls="collapseOne"
+                                            >
+                                                Create Reports
+                                            </button>
+                                        </h5>
                                     </div>
-                                    <div class="col-4">
-                                        <div class="card h-100">
-                                            <div class="card-body">
-                                                <h5 class="card-title">
-                                                    Outward Report
-                                                </h5>
-                                                <h6
-                                                    class="card-subtitle mb-2 text-muted"
-                                                >
-                                                    A Typical Outward Report
-                                                </h6>
 
-                                                <button
-                                                    href="#"
-                                                    class="btn btn-toolbar mt-3"
-                                                    data-toggle="modal"
-                                                    data-target="#inwardReport"
-                                                >
-                                                    Generate Report
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="card h-100">
-                                            <div class="card-body">
-                                                <h5 class="card-title">
-                                                    Card title
-                                                </h5>
-                                                <h6
-                                                    class="card-subtitle mb-2 text-muted"
-                                                >
-                                                    Card subtitle
-                                                </h6>
+                                    <div
+                                        id="collapseOne"
+                                        class="collapse show"
+                                        aria-labelledby="headingOne"
+                                        data-parent="#reportsAccodion"
+                                    >
+                                        <div class="card-body">
+                                            <!-- Reports Dashboard Body -->
+                                            <section class="section mt-4">
+                                                <div class="container-fluid">
+                                                    <div class="row mb-4">
+                                                        <div class="col-4">
+                                                            <div
+                                                                class="card h-100"
+                                                            >
+                                                                <div
+                                                                    class="card-body"
+                                                                >
+                                                                    <h5
+                                                                        class="card-title"
+                                                                    >
+                                                                        Inward
+                                                                        Report
+                                                                    </h5>
+                                                                    <h6
+                                                                        class="card-subtitle mb-2 text-muted"
+                                                                    >
+                                                                        A
+                                                                        Typical
+                                                                        Inward
+                                                                        Report
+                                                                    </h6>
 
-                                                <a href="#" class="card-link"
-                                                    >Card link</a
-                                                >
-                                                <a href="#" class="card-link"
-                                                    >Another link</a
-                                                >
-                                            </div>
+                                                                    <button
+                                                                        href="#"
+                                                                        class="btn btn-toolbar mt-3 generate-report"
+                                                                        data-toggle="modal"
+                                                                        data-target="#inwardReport"
+                                                                    >
+                                                                        Generate
+                                                                        Report
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div
+                                                                class="card h-100"
+                                                            >
+                                                                <div
+                                                                    class="card-body"
+                                                                >
+                                                                    <h5
+                                                                        class="card-title"
+                                                                    >
+                                                                        Outward
+                                                                        Report
+                                                                    </h5>
+                                                                    <h6
+                                                                        class="card-subtitle mb-2 text-muted"
+                                                                    >
+                                                                        A
+                                                                        Typical
+                                                                        Outward
+                                                                        Report
+                                                                    </h6>
+
+                                                                    <button
+                                                                        href="#"
+                                                                        class="btn btn-toolbar mt-3 generate-report"
+                                                                        data-toggle="modal"
+                                                                        data-target="#inwardReport"
+                                                                    >
+                                                                        Generate
+                                                                        Report
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div
+                                                                class="card h-100"
+                                                            >
+                                                                <div
+                                                                    class="card-body"
+                                                                >
+                                                                    <h5
+                                                                        class="card-title"
+                                                                    >
+                                                                        Card
+                                                                        title
+                                                                    </h5>
+                                                                    <h6
+                                                                        class="card-subtitle mb-2 text-muted"
+                                                                    >
+                                                                        Card
+                                                                        subtitle
+                                                                    </h6>
+
+                                                                    <a
+                                                                        href="#"
+                                                                        class="card-link"
+                                                                        >Card
+                                                                        link</a
+                                                                    >
+                                                                    <a
+                                                                        href="#"
+                                                                        class="card-link"
+                                                                        >Another
+                                                                        link</a
+                                                                    >
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-4">
+                                                        <div class="col-4">
+                                                            <div
+                                                                class="card h-100"
+                                                            >
+                                                                <div
+                                                                    class="card-body"
+                                                                >
+                                                                    <h5
+                                                                        class="card-title"
+                                                                    >
+                                                                        Card
+                                                                        title
+                                                                    </h5>
+                                                                    <h6
+                                                                        class="card-subtitle mb-2 text-muted"
+                                                                    >
+                                                                        Card
+                                                                        subtitle
+                                                                    </h6>
+                                                                    <p
+                                                                        class="card-text"
+                                                                    >
+                                                                        Some
+                                                                        quick
+                                                                        example
+                                                                        text to
+                                                                        build on
+                                                                        the card
+                                                                        title
+                                                                        and make
+                                                                        up the
+                                                                        bulk of
+                                                                        the
+                                                                        card's
+                                                                        content.
+                                                                    </p>
+                                                                    <a
+                                                                        href="#"
+                                                                        class="card-link"
+                                                                        >Card
+                                                                        link</a
+                                                                    >
+                                                                    <a
+                                                                        href="#"
+                                                                        class="card-link"
+                                                                        >Another
+                                                                        link</a
+                                                                    >
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div
+                                                                class="card h-100"
+                                                            >
+                                                                <div
+                                                                    class="card-body"
+                                                                >
+                                                                    <h5
+                                                                        class="card-title"
+                                                                    >
+                                                                        Card
+                                                                        title
+                                                                    </h5>
+                                                                    <h6
+                                                                        class="card-subtitle mb-2 text-muted"
+                                                                    >
+                                                                        Card
+                                                                        subtitle
+                                                                    </h6>
+                                                                    <p
+                                                                        class="card-text"
+                                                                    >
+                                                                        Some
+                                                                        quick
+                                                                        example
+                                                                        text to
+                                                                        build on
+                                                                        the card
+                                                                        title
+                                                                        and make
+                                                                        up the
+                                                                        bulk of
+                                                                        the
+                                                                        card's
+                                                                        content.
+                                                                    </p>
+                                                                    <a
+                                                                        href="#"
+                                                                        class="card-link"
+                                                                        >Card
+                                                                        link</a
+                                                                    >
+                                                                    <a
+                                                                        href="#"
+                                                                        class="card-link"
+                                                                        >Another
+                                                                        link</a
+                                                                    >
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div
+                                                                class="card h-100"
+                                                            >
+                                                                <div
+                                                                    class="card-body"
+                                                                >
+                                                                    <h5
+                                                                        class="card-title"
+                                                                    >
+                                                                        Card
+                                                                        title
+                                                                    </h5>
+                                                                    <h6
+                                                                        class="card-subtitle mb-2 text-muted"
+                                                                    >
+                                                                        Card
+                                                                        subtitle
+                                                                    </h6>
+                                                                    <p
+                                                                        class="card-text"
+                                                                    >
+                                                                        Some
+                                                                        quick
+                                                                        example
+                                                                        text to
+                                                                        build on
+                                                                        the card
+                                                                        title
+                                                                        and make
+                                                                        up the
+                                                                        bulk of
+                                                                        the
+                                                                        card's
+                                                                        content.
+                                                                    </p>
+                                                                    <a
+                                                                        href="#"
+                                                                        class="card-link"
+                                                                        >Card
+                                                                        link</a
+                                                                    >
+                                                                    <a
+                                                                        href="#"
+                                                                        class="card-link"
+                                                                        >Another
+                                                                        link</a
+                                                                    >
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-4">
+                                                        <div class="col-4">
+                                                            <div
+                                                                class="card h-100"
+                                                            >
+                                                                <div
+                                                                    class="card-body"
+                                                                >
+                                                                    <h5
+                                                                        class="card-title"
+                                                                    >
+                                                                        Card
+                                                                        title
+                                                                    </h5>
+                                                                    <h6
+                                                                        class="card-subtitle mb-2 text-muted"
+                                                                    >
+                                                                        Card
+                                                                        subtitle
+                                                                    </h6>
+                                                                    <p
+                                                                        class="card-text"
+                                                                    >
+                                                                        Some
+                                                                        quick
+                                                                        example
+                                                                        text to
+                                                                        build on
+                                                                        the card
+                                                                        title
+                                                                        and make
+                                                                        up the
+                                                                        bulk of
+                                                                        the
+                                                                        card's
+                                                                        content.
+                                                                    </p>
+                                                                    <a
+                                                                        href="#"
+                                                                        class="card-link"
+                                                                        >Card
+                                                                        link</a
+                                                                    >
+                                                                    <a
+                                                                        href="#"
+                                                                        class="card-link"
+                                                                        >Another
+                                                                        link</a
+                                                                    >
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div
+                                                                class="card h-100"
+                                                            >
+                                                                <div
+                                                                    class="card-body"
+                                                                >
+                                                                    <h5
+                                                                        class="card-title"
+                                                                    >
+                                                                        Card
+                                                                        title
+                                                                    </h5>
+                                                                    <h6
+                                                                        class="card-subtitle mb-2 text-muted"
+                                                                    >
+                                                                        Card
+                                                                        subtitle
+                                                                    </h6>
+                                                                    <p
+                                                                        class="card-text"
+                                                                    >
+                                                                        Some
+                                                                        quick
+                                                                        example
+                                                                        text to
+                                                                        build on
+                                                                        the card
+                                                                        title
+                                                                        and make
+                                                                        up the
+                                                                        bulk of
+                                                                        the
+                                                                        card's
+                                                                        content.
+                                                                    </p>
+                                                                    <a
+                                                                        href="#"
+                                                                        class="card-link"
+                                                                        >Card
+                                                                        link</a
+                                                                    >
+                                                                    <a
+                                                                        href="#"
+                                                                        class="card-link"
+                                                                        >Another
+                                                                        link</a
+                                                                    >
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row mb-4">
-                                    <div class="col-4">
-                                        <div class="card h-100">
-                                            <div class="card-body">
-                                                <h5 class="card-title">
-                                                    Card title
-                                                </h5>
-                                                <h6
-                                                    class="card-subtitle mb-2 text-muted"
-                                                >
-                                                    Card subtitle
-                                                </h6>
-                                                <p class="card-text">
-                                                    Some quick example text to
-                                                    build on the card title and
-                                                    make up the bulk of the
-                                                    card's content.
-                                                </p>
-                                                <a href="#" class="card-link"
-                                                    >Card link</a
-                                                >
-                                                <a href="#" class="card-link"
-                                                    >Another link</a
-                                                >
-                                            </div>
-                                        </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h5 class="mb-0">
+                                            <button
+                                                class="btn btn-link collapsed"
+                                                type="button"
+                                                data-toggle="collapse"
+                                                data-target="#collapseTwo"
+                                                aria-expanded="false"
+                                                aria-controls="collapseTwo"
+                                            >
+                                                Generated Reports
+                                            </button>
+                                        </h5>
                                     </div>
-                                    <div class="col-4">
-                                        <div class="card h-100">
-                                            <div class="card-body">
-                                                <h5 class="card-title">
-                                                    Card title
-                                                </h5>
-                                                <h6
-                                                    class="card-subtitle mb-2 text-muted"
-                                                >
-                                                    Card subtitle
-                                                </h6>
-                                                <p class="card-text">
-                                                    Some quick example text to
-                                                    build on the card title and
-                                                    make up the bulk of the
-                                                    card's content.
-                                                </p>
-                                                <a href="#" class="card-link"
-                                                    >Card link</a
-                                                >
-                                                <a href="#" class="card-link"
-                                                    >Another link</a
-                                                >
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="card h-100">
-                                            <div class="card-body">
-                                                <h5 class="card-title">
-                                                    Card title
-                                                </h5>
-                                                <h6
-                                                    class="card-subtitle mb-2 text-muted"
-                                                >
-                                                    Card subtitle
-                                                </h6>
-                                                <p class="card-text">
-                                                    Some quick example text to
-                                                    build on the card title and
-                                                    make up the bulk of the
-                                                    card's content.
-                                                </p>
-                                                <a href="#" class="card-link"
-                                                    >Card link</a
-                                                >
-                                                <a href="#" class="card-link"
-                                                    >Another link</a
-                                                >
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row mb-4">
-                                    <div class="col-4">
-                                        <div class="card h-100">
-                                            <div class="card-body">
-                                                <h5 class="card-title">
-                                                    Card title
-                                                </h5>
-                                                <h6
-                                                    class="card-subtitle mb-2 text-muted"
-                                                >
-                                                    Card subtitle
-                                                </h6>
-                                                <p class="card-text">
-                                                    Some quick example text to
-                                                    build on the card title and
-                                                    make up the bulk of the
-                                                    card's content.
-                                                </p>
-                                                <a href="#" class="card-link"
-                                                    >Card link</a
-                                                >
-                                                <a href="#" class="card-link"
-                                                    >Another link</a
-                                                >
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="card h-100">
-                                            <div class="card-body">
-                                                <h5 class="card-title">
-                                                    Card title
-                                                </h5>
-                                                <h6
-                                                    class="card-subtitle mb-2 text-muted"
-                                                >
-                                                    Card subtitle
-                                                </h6>
-                                                <p class="card-text">
-                                                    Some quick example text to
-                                                    build on the card title and
-                                                    make up the bulk of the
-                                                    card's content.
-                                                </p>
-                                                <a href="#" class="card-link"
-                                                    >Card link</a
-                                                >
-                                                <a href="#" class="card-link"
-                                                    >Another link</a
-                                                >
-                                            </div>
+                                    <div
+                                        id="collapseTwo"
+                                        class="collapse"
+                                        aria-labelledby="headingTwo"
+                                        data-parent="#reportsAccodion"
+                                    >
+                                        <div class="card-body">
+                                            <h3>
+                                                Inward Report - Generated
+                                                Reports
+                                            </h3>
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">
+                                                            First
+                                                        </th>
+                                                        <th scope="col">
+                                                            Last
+                                                        </th>
+                                                        <th scope="col">
+                                                            Handle
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Mark</td>
+                                                        <td>Otto</td>
+                                                        <td>@mdo</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Jacob</td>
+                                                        <td>Thornton</td>
+                                                        <td>@fat</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td>Larry</td>
+                                                        <td>the Bird</td>
+                                                        <td>@twitter</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
